@@ -23,4 +23,4 @@
       - "Читайте так же"
 ![chrome_XLZWQBLNfW](https://github.com/user-attachments/assets/a859ef49-fef0-454e-a9ee-65692ca3e804)
 ### После полного описания статьи и настройки фейкового сайта, вы можете скачать статью в формате HTML.
-![chrome_hvxN8Pgw8J](https://github.com/user-attachments/assets/aef828d3-d7a2-48ed-96ac-bce267a8c0dd)
+![chrome_P227cyK75o](https://github.com/user-attachments/assets/02a61a1d-4005-4924-ab14-34bc68395fd3)
