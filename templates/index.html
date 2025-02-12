@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание новостей</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Создание Новостей</h1>
+        <p class="intro">Погрузитесь в мир журналистики и создайте свою уникальную историю.</p>
+        
+        <label for="title">Заголовок истории:</label>
+        <textarea id="title" placeholder="Введите заголовок"></textarea>
+
+        <label for="description">Краткое описание:</label>
+        <textarea id="description" placeholder="Введите описание"></textarea>
+        
+        <label for="photoInput">Фото для новости:</label>
+        <div id="photoContainer">
+            <input type="file" id="photoInput" accept="image/*" style="display: none;" multiple>
+            <button id="addPhotoButton">Добавить Фото</button>
+        </div>
+        <div id="photoList"></div>
+
+        <label for="journalist">Имя журналиста:</label>
+        <textarea id="journalist" placeholder="Введите имя журналиста"></textarea>
+
+        <button id="createNewsButton">Создать новость</button>
+    </div>
+
+    <!-- Модальное окно для редактирования сайта -->
+    <div id="editSiteModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Редактирование сайта</h2>
+            <label for="siteName">Наименование портала:</label>
+            <input type="text" id="siteName" placeholder="Введите название сайта">
+            
+            <label for="adBanner1">Рекламный банер 1:</label>
+            <input type="file" id="adBanner1" accept="image/*">
+            
+            <label for="adBanner2">Рекламный банер 2:</label>
+            <input type="file" id="adBanner2" accept="image/*">
+            
+            <label for="articleDate">Дата написания статьи:</label>
+            <input type="date" id="articleDate">
+            
+            <label for="relatedNews1">Читайте также (Новость 1):</label>
+            <input type="text" id="relatedNews1" placeholder="Введите новость">
+            
+            <label for="relatedNews2">Читайте также (Новость 2):</label>
+            <input type="text" id="relatedNews2" placeholder="Введите новость">
+            
+            <label for="relatedNews3">Читайте также (Новость 3):</label>
+            <input type="text" id="relatedNews3" placeholder="Введите новость">
+            
+            <button id="generateRandomNews">Случайная генерация новостей</button>
+            <button id="saveSiteSettings">Сохранить и перейти к скачиванию</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для скачивания -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Скачать</h2>
+            <button id="downloadHTML">Скачать HTML</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
