@@ -2,7 +2,7 @@
 ## Установка
 1. Клонировать репозиторий:
       ```bash
-   git clone https://github.com/ваш-username/ваш-репозиторий.git
+   git clone https://github.com/KinzyabaevVadim/FAKE_NEWS.git
 2. Установить необходимые библиотеки:
       ```bash
    pip install -r requirements.txt
